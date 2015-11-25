@@ -1,3 +1,5 @@
+include_recipe "delayed_job"
+
 #execute "testing" do
 #  command %Q{
 #    echo "i ran at #{Time.now}" >> /root/cheftime
@@ -23,7 +25,7 @@
 # include_recipe "sidekiq"
 
 #uncomment to turn on memcached
-# include_recipe "memcached"
+include_recipe "memcached"
 
 #uncomment ot run the riak recipe
 # include_recipe "riak"
